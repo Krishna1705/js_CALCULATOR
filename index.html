@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <style>
+        .formstyle{
+            text-align:center;
+            width: 100%;
+            height: auto;
+            
+        }
+        input{
+          width: 30%;
+          color:white;
+          background-color:blueviolet;
+          font-size:larger;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Calculator using Javascript, HTML, CSS</h2>
+
+  <div class="formstyle">
+    <form name="calc" style="display: inline-block; border: 5px solid rgb(48, 47, 47); box-shadow:0px 1px 2px 3px grey;">
+        <input type="text" value="" name="answer" style="width: 97%;"></input>
+
+        <br><br>
+        <input type="button" onclick="calc.answer.value+='1'" value="1">
+        <input type="button" onclick="calc.answer.value+='2'" value="2">
+        <input type="button" onclick="calc.answer.value+='3'" value="3">  
+        <br><br>
+        <input type="button" onclick="calc.answer.value+='4'" value="4">
+        <input type="button" onclick="calc.answer.value+='5'" value="5">
+        <input type="button" onclick="calc.answer.value+='6'" value="6">  
+        <br><br>
+        <input type="button" onclick="calc.answer.value+='7'" value="7">
+        <input type="button" onclick="calc.answer.value+='8'" value="8">
+        <input type="button" onclick="calc.answer.value+='9'" value="9">
+        <br><br>
+        <input type="button" onclick="calc.answer.value+='+'" value="+">
+        <input type="button" onclick="calc.answer.value+='-'" value="-">
+        <input type="button" onclick="calc.answer.value+='*'" value="*">
+        <br><br>
+        <input type="button" onclick="calc.answer.value+='/'" value="/">
+        <input type="button" onclick="calc.answer.value+='0'" value="0">
+        <input type="button" onclick="calc.answer.value =eval(calc.answer.value)" value="=">
+        <br><br>
+        <input type="button" onclick="calc.answer.value=''" value="Clear All" style="width: 100%;;">
+    </form>
+  </div>
+</body>
+<!--The eval() function evaluates or executes an argument
+If the argument is an expression, eval() evaluates the expression.
+If the argument is one or more JavaScript statements, eval() executes the statements.-->
+</html>
